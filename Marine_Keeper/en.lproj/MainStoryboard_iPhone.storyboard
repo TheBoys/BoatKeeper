@@ -4,14 +4,48 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Search_1-->
+        <!--Bp Search - Search_1-->
         <scene sceneID="SNe-bs-qs9">
             <objects>
-                <viewController title="Search_1" id="cad-RP-n35" sceneMemberID="viewController">
+                <viewController title="Search_1" id="cad-RP-n35" customClass="bpSearch" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kuD-sT-UFs">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter registration number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJ7-nP-f8r">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sf1-Ce-0s0" userLabel="txtRegoNumber">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="YHF-fY-JvS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cad-RP-n35" id="gnr-ih-PfS"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Results" translatesAutoresizingMaskIntoConstraints="NO" id="KPX-lm-jkl" userLabel="txvSearchResults">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Yb1-eV-UGu"/>
+                                    <constraint firstAttribute="height" constant="34" id="xB9-6C-uZs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sf1-Ce-0s0" firstAttribute="top" secondItem="kuD-sT-UFs" secondAttribute="top" constant="82" id="O2a-Oa-SGP"/>
+                            <constraint firstItem="KPX-lm-jkl" firstAttribute="top" secondItem="kuD-sT-UFs" secondAttribute="top" constant="142" id="Zlz-iL-GaI"/>
+                            <constraint firstItem="IJ7-nP-f8r" firstAttribute="top" secondItem="kuD-sT-UFs" secondAttribute="top" constant="39" id="eez-IN-JrT"/>
+                            <constraint firstItem="sf1-Ce-0s0" firstAttribute="centerX" secondItem="IJ7-nP-f8r" secondAttribute="centerX" type="default" id="mvR-jz-vig"/>
+                            <constraint firstItem="IJ7-nP-f8r" firstAttribute="centerX" secondItem="kuD-sT-UFs" secondAttribute="centerX" type="default" id="nmn-0f-HyF"/>
+                            <constraint firstItem="KPX-lm-jkl" firstAttribute="centerX" secondItem="sf1-Ce-0s0" secondAttribute="centerX" type="default" id="pLs-AT-mTr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search 1" id="Pd4-mm-84J">
                         <barButtonItem key="rightBarButtonItem" title="Search 2" id="WOZ-l4-1nH">
@@ -20,6 +54,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txvSearchResult" destination="KPX-lm-jkl" id="0rI-ZL-RNN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbf-qw-7Ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +84,21 @@
                     <view key="view" contentMode="scaleToFill" id="0IG-ys-JgM">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00I-05-Pqr">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="00I-05-Pqr" firstAttribute="top" secondItem="0IG-ys-JgM" secondAttribute="top" type="default" id="1iD-Aq-cZc"/>
+                            <constraint firstItem="00I-05-Pqr" firstAttribute="leading" secondItem="0IG-ys-JgM" secondAttribute="leading" type="default" id="A6s-Am-ldI"/>
+                            <constraint firstItem="00I-05-Pqr" firstAttribute="bottom" secondItem="0IG-ys-JgM" secondAttribute="bottom" type="default" id="nec-G8-f8i"/>
+                            <constraint firstItem="00I-05-Pqr" firstAttribute="trailing" secondItem="0IG-ys-JgM" secondAttribute="trailing" type="default" id="sLJ-QC-30m"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search 2" id="9vC-Tv-k73">
                         <barButtonItem key="backBarButtonItem" title="Search 1" id="SMP-we-fDg"/>
@@ -99,7 +150,7 @@
         <scene sceneID="qv2-WB-shc">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="L3s-og-YcH" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Sqv-0i-X17">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
