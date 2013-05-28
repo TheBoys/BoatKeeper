@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface bpViewController : UIViewController
+@interface bpViewController : UIViewController{
+    
+    UITextView *txvSearchResults;
+    
+}
+
+@property (nonatomic, strong) IBOutlet UITextView *txvSearchResult;
 
 @end
