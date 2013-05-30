@@ -32,7 +32,7 @@
 		255FB47B1750BBBF00CD8C63 /* Players.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FB4631750BBBF00CD8C63 /* Players.png */; };
 		255FB47C1750BBBF00CD8C63 /* Players@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FB4641750BBBF00CD8C63 /* Players@2x.png */; };
 		255FB48C1750BC4C00CD8C63 /* bpAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FB4871750BC4C00CD8C63 /* bpAdmin.m */; };
-		255FB48D1750BC4C00CD8C63 /* bpSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FB4891750BC4C00CD8C63 /* bpSearch.m */; };
+		255FB48D1750BC4C00CD8C63 /* bpSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FB4891750BC4C00CD8C63 /* bpSearchViewController.m */; };
 		255FB48E1750BC4C00CD8C63 /* bpTrips.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FB48B1750BC4C00CD8C63 /* bpTrips.m */; };
 		25B3A03E17350BEC0097C2A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B3A03D17350BEC0097C2A4 /* UIKit.framework */; };
 		25B3A04017350BEC0097C2A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B3A03F17350BEC0097C2A4 /* Foundation.framework */; };
@@ -75,8 +75,8 @@
 		255FB4641750BBBF00CD8C63 /* Players@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players@2x.png"; sourceTree = "<group>"; };
 		255FB4861750BC4C00CD8C63 /* bpAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpAdmin.h; sourceTree = "<group>"; };
 		255FB4871750BC4C00CD8C63 /* bpAdmin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bpAdmin.m; sourceTree = "<group>"; };
-		255FB4881750BC4C00CD8C63 /* bpSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpSearch.h; sourceTree = "<group>"; };
-		255FB4891750BC4C00CD8C63 /* bpSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bpSearch.m; sourceTree = "<group>"; };
+		255FB4881750BC4C00CD8C63 /* bpSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpSearchViewController.h; sourceTree = "<group>"; };
+		255FB4891750BC4C00CD8C63 /* bpSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bpSearchViewController.m; sourceTree = "<group>"; };
 		255FB48A1750BC4C00CD8C63 /* bpTrips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpTrips.h; sourceTree = "<group>"; };
 		255FB48B1750BC4C00CD8C63 /* bpTrips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bpTrips.m; sourceTree = "<group>"; };
 		25B3A03A17350BEC0097C2A4 /* Marine_Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marine_Keeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,8 +176,8 @@
 			children = (
 				255FB4861750BC4C00CD8C63 /* bpAdmin.h */,
 				255FB4871750BC4C00CD8C63 /* bpAdmin.m */,
-				255FB4881750BC4C00CD8C63 /* bpSearch.h */,
-				255FB4891750BC4C00CD8C63 /* bpSearch.m */,
+				255FB4881750BC4C00CD8C63 /* bpSearchViewController.h */,
+				255FB4891750BC4C00CD8C63 /* bpSearchViewController.m */,
 				255FB48A1750BC4C00CD8C63 /* bpTrips.h */,
 				255FB48B1750BC4C00CD8C63 /* bpTrips.m */,
 				25B3A04C17350BEC0097C2A4 /* bpAppDelegate.h */,
@@ -302,7 +302,7 @@
 				25B3A04E17350BEC0097C2A4 /* bpAppDelegate.m in Sources */,
 				25B3A05D17350BED0097C2A4 /* bpViewController.m in Sources */,
 				255FB48C1750BC4C00CD8C63 /* bpAdmin.m in Sources */,
-				255FB48D1750BC4C00CD8C63 /* bpSearch.m in Sources */,
+				255FB48D1750BC4C00CD8C63 /* bpSearchViewController.m in Sources */,
 				255FB48E1750BC4C00CD8C63 /* bpTrips.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

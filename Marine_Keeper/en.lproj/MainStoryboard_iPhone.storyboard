@@ -4,14 +4,48 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Search_1-->
+        <!--Bp Search View Controller - Search_1-->
         <scene sceneID="SNe-bs-qs9">
             <objects>
-                <viewController title="Search_1" id="cad-RP-n35" sceneMemberID="viewController">
+                <viewController title="Search_1" id="cad-RP-n35" customClass="bpSearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kuD-sT-UFs">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter Registration Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D73-5w-B0e">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozB-rM-8a5" userLabel="txtRegoNumber">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="szS-yC-OpD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cad-RP-n35" id="QnH-7A-yaT"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Result: " translatesAutoresizingMaskIntoConstraints="NO" id="M9k-9v-DRj" userLabel="txvReturnDetails">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5Hg-Az-D6V"/>
+                                    <constraint firstAttribute="height" constant="34" id="gNi-wE-LEj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ozB-rM-8a5" firstAttribute="centerX" secondItem="D73-5w-B0e" secondAttribute="centerX" type="default" id="2IF-xy-PuY"/>
+                            <constraint firstItem="M9k-9v-DRj" firstAttribute="top" secondItem="ozB-rM-8a5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="FSi-yw-FQa"/>
+                            <constraint firstItem="ozB-rM-8a5" firstAttribute="top" secondItem="kuD-sT-UFs" secondAttribute="top" constant="86" id="Gss-HX-uO1"/>
+                            <constraint firstItem="M9k-9v-DRj" firstAttribute="centerX" secondItem="ozB-rM-8a5" secondAttribute="centerX" type="default" id="coc-Ff-yeq"/>
+                            <constraint firstItem="M9k-9v-DRj" firstAttribute="centerX" secondItem="kuD-sT-UFs" secondAttribute="centerX" type="default" id="jl0-ZB-VV9"/>
+                            <constraint firstItem="D73-5w-B0e" firstAttribute="top" secondItem="kuD-sT-UFs" secondAttribute="top" constant="38" id="no6-tF-EhT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search 1" id="Pd4-mm-84J">
                         <barButtonItem key="rightBarButtonItem" title="Search 2" id="WOZ-l4-1nH">
@@ -20,6 +54,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchResults" destination="M9k-9v-DRj" id="BG1-8k-WTf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbf-qw-7Ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,7 +136,7 @@
         <scene sceneID="qv2-WB-shc">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="L3s-og-YcH" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Sqv-0i-X17">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -178,6 +215,17 @@
         <image name="Gestures.png" width="30" height="30"/>
         <image name="Players.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="bpSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/bpSearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="searchResults" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
