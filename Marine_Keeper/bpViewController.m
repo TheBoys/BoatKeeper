@@ -27,19 +27,4 @@
 }
 
 
-- (IBAction)startNavigation:(UIButton *)sender {
-//    _locations = [NSMutableArray array];
-//    _points = [NSMutableArray array];
-//    if ([CLLocationManager locationServicesEnabled]) {
-//        self.myLocationManager = [[CLLocationManager alloc]init];
-        
-//        self.myLocationManager.delegate = self;
-        
-//        [self.myLocationManager startUpdatingLocation];
-//    }else{
-        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Location" message:@"Location services disabled. You need to enable them in the settings" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alertView show];
-    }
-//}
-
 @end
