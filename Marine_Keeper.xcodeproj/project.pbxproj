@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1520B544175B46070012F94D /* bpTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520B543175B46070012F94D /* bpTripViewController.m */; };
+		1520B546175B4BC40012F94D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1520B545175B4BC40012F94D /* CoreLocation.framework */; };
+		1520B548175B4BD10012F94D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1520B547175B4BD10012F94D /* MapKit.framework */; };
 		255FB4651750BBBF00CD8C63 /* 1Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FB44D1750BBBF00CD8C63 /* 1Star.png */; };
 		255FB4661750BBBF00CD8C63 /* 1Star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FB44E1750BBBF00CD8C63 /* 1Star@2x.png */; };
 		255FB4671750BBBF00CD8C63 /* 1StarSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FB44F1750BBBF00CD8C63 /* 1StarSmall.png */; };
@@ -49,6 +52,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1520B542175B46070012F94D /* bpTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpTripViewController.h; sourceTree = "<group>"; };
+		1520B543175B46070012F94D /* bpTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bpTripViewController.m; sourceTree = "<group>"; };
+		1520B545175B4BC40012F94D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1520B547175B4BD10012F94D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		255FB44D1750BBBF00CD8C63 /* 1Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1Star.png; sourceTree = "<group>"; };
 		255FB44E1750BBBF00CD8C63 /* 1Star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1Star@2x.png"; sourceTree = "<group>"; };
 		255FB44F1750BBBF00CD8C63 /* 1StarSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1StarSmall.png; sourceTree = "<group>"; };
@@ -103,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1520B548175B4BD10012F94D /* MapKit.framework in Frameworks */,
+				1520B546175B4BC40012F94D /* CoreLocation.framework in Frameworks */,
 				25B3A03E17350BEC0097C2A4 /* UIKit.framework in Frameworks */,
 				25B3A04017350BEC0097C2A4 /* Foundation.framework in Frameworks */,
 				25B3A04217350BEC0097C2A4 /* CoreGraphics.framework in Frameworks */,
@@ -146,6 +155,8 @@
 		25B3A03117350BEC0097C2A4 = {
 			isa = PBXGroup;
 			children = (
+				1520B547175B4BD10012F94D /* MapKit.framework */,
+				1520B545175B4BC40012F94D /* CoreLocation.framework */,
 				255FB44C1750BBBF00CD8C63 /* Images */,
 				25B3A04317350BEC0097C2A4 /* Marine_Keeper */,
 				25B3A03C17350BEC0097C2A4 /* Frameworks */,
@@ -174,6 +185,8 @@
 		25B3A04317350BEC0097C2A4 /* Marine_Keeper */ = {
 			isa = PBXGroup;
 			children = (
+				1520B542175B46070012F94D /* bpTripViewController.h */,
+				1520B543175B46070012F94D /* bpTripViewController.m */,
 				255FB4861750BC4C00CD8C63 /* bpAdminViewController.h */,
 				255FB4871750BC4C00CD8C63 /* bpAdminViewController.m */,
 				255FB4881750BC4C00CD8C63 /* bpSearchViewController.h */,
@@ -304,6 +317,7 @@
 				255FB48C1750BC4C00CD8C63 /* bpAdminViewController.m in Sources */,
 				255FB48D1750BC4C00CD8C63 /* bpSearchViewController.m in Sources */,
 				255FB48E1750BC4C00CD8C63 /* bpTripsViewController.m in Sources */,
+				1520B544175B46070012F94D /* bpTripViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

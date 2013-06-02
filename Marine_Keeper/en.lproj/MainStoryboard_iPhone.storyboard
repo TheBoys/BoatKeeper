@@ -64,30 +64,78 @@
                     <view key="view" contentMode="scaleToFill" id="PVw-AR-SAE">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zL-9Z-ODB">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start Trip">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nPN-dm-bpz" kind="push" id="tnr-hl-rGq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2zL-9Z-ODB" secondAttribute="bottom" constant="27" id="Ib3-9c-Wkq"/>
+                            <constraint firstItem="2zL-9Z-ODB" firstAttribute="leading" secondItem="PVw-AR-SAE" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Qhk-V3-Pge"/>
+                            <constraint firstAttribute="trailing" secondItem="2zL-9Z-ODB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="TbP-RJ-Vk6"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Trip 1" id="Kkn-iU-VMo">
-                        <barButtonItem key="rightBarButtonItem" title="Trip 2" id="YS9-d9-x6l">
-                            <connections>
-                                <segue destination="nPN-dm-bpz" kind="push" id="A5U-DQ-ahb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="New Trip" id="Kkn-iU-VMo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQZ-kb-dyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="453" y="-176"/>
         </scene>
-        <!--View Controller - Trip 2-->
+        <!--Bp Trip View Controller - Trip-->
         <scene sceneID="7gd-VX-wuo">
             <objects>
-                <viewController id="nPN-dm-bpz" sceneMemberID="viewController">
+                <viewController id="nPN-dm-bpz" customClass="bpTripViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ivi-0l-BuW">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mT-zP-uN8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="pTA-PD-b4N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zY-bi-Wkh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="2aN-6K-z6Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3zY-bi-Wkh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="D2G-h5-2pU"/>
+                            <constraint firstItem="3zY-bi-Wkh" firstAttribute="baseline" secondItem="8mT-zP-uN8" secondAttribute="baseline" type="default" id="LrR-eY-Loe"/>
+                            <constraint firstItem="8mT-zP-uN8" firstAttribute="leading" secondItem="Ivi-0l-BuW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UBm-vX-YOL"/>
+                            <constraint firstAttribute="bottom" secondItem="8mT-zP-uN8" secondAttribute="bottom" constant="25" id="gDz-cm-fq2"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Trip 2" id="3EX-Te-UcL">
+                    <navigationItem key="navigationItem" title="Trip" id="3EX-Te-UcL">
                         <barButtonItem key="backBarButtonItem" title="Trip 1" id="rKV-k7-i9d"/>
                     </navigationItem>
                 </viewController>
@@ -179,11 +227,14 @@
         <image name="Players.png" width="30" height="30"/>
     </resources>
     <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="bpTripViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/bpTripViewController.h"/>
+        </class>
         <class className="bpViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/bpViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="startNavigation:" candidateClass="UIButton"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
