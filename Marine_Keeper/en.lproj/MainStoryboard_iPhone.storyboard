@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="853" y="503"/>
         </scene>
-        <!--Bp View Controller - Trip_1-->
+        <!--Bp New Trip View Controller - Trip_1-->
         <scene sceneID="ocq-Mm-oio">
             <objects>
-                <viewController title="Trip_1" id="EjK-6z-ToM" customClass="bpViewController" sceneMemberID="viewController">
+                <viewController title="Trip_1" id="EjK-6z-ToM" customClass="bpNewTripViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PVw-AR-SAE">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -102,7 +102,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mT-zP-uN8">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="pTA-PD-b4N"/>
+                                    <constraint firstAttribute="width" constant="134" id="aK3-6f-bvV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Stop">
@@ -129,18 +129,60 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lat:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmM-J4-Apm">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="DSi-dD-zbh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Long:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBX-dv-VZb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="3xG-is-1tT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmq-J7-Ihp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="wrd-Yw-w5b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMi-mx-hb3">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TMi-mx-hb3" firstAttribute="baseline" secondItem="LBX-dv-VZb" secondAttribute="baseline" type="default" id="1t9-oZ-fsu"/>
+                            <constraint firstItem="TMi-mx-hb3" firstAttribute="leading" secondItem="3zY-bi-Wkh" secondAttribute="leading" type="default" id="2BU-wI-yjn"/>
+                            <constraint firstItem="LBX-dv-VZb" firstAttribute="top" secondItem="Ivi-0l-BuW" secondAttribute="top" constant="106" id="9nD-UI-N8M"/>
+                            <constraint firstItem="Mmq-J7-Ihp" firstAttribute="baseline" secondItem="lmM-J4-Apm" secondAttribute="baseline" type="default" id="BR8-CB-V9I"/>
                             <constraint firstAttribute="trailing" secondItem="3zY-bi-Wkh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="D2G-h5-2pU"/>
                             <constraint firstItem="3zY-bi-Wkh" firstAttribute="baseline" secondItem="8mT-zP-uN8" secondAttribute="baseline" type="default" id="LrR-eY-Loe"/>
+                            <constraint firstItem="lmM-J4-Apm" firstAttribute="top" secondItem="Ivi-0l-BuW" secondAttribute="top" constant="55" id="Ngi-uL-FQG"/>
                             <constraint firstItem="8mT-zP-uN8" firstAttribute="leading" secondItem="Ivi-0l-BuW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UBm-vX-YOL"/>
+                            <constraint firstItem="lmM-J4-Apm" firstAttribute="trailing" secondItem="LBX-dv-VZb" secondAttribute="trailing" type="default" id="W7i-gw-ZnS"/>
+                            <constraint firstItem="Mmq-J7-Ihp" firstAttribute="leading" secondItem="TMi-mx-hb3" secondAttribute="leading" type="default" id="Wha-v5-boh"/>
+                            <constraint firstItem="Mmq-J7-Ihp" firstAttribute="trailing" secondItem="TMi-mx-hb3" secondAttribute="trailing" type="default" id="XiM-Ak-LrK"/>
                             <constraint firstAttribute="bottom" secondItem="8mT-zP-uN8" secondAttribute="bottom" constant="25" id="gDz-cm-fq2"/>
+                            <constraint firstItem="LBX-dv-VZb" firstAttribute="trailing" secondItem="8mT-zP-uN8" secondAttribute="trailing" type="default" id="htc-42-cFE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Trip" id="3EX-Te-UcL">
                         <barButtonItem key="backBarButtonItem" title="Trip 1" id="rKV-k7-i9d"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="displayLatitude" destination="Mmq-J7-Ihp" id="9yf-np-S9i"/>
+                        <outlet property="displayLongitude" destination="TMi-mx-hb3" id="1vg-du-JpN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j18-T4-4xR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,14 +275,16 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
+        <class className="bpNewTripViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/bpNewTripViewController.h"/>
+        </class>
         <class className="bpTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/bpTripViewController.h"/>
             <relationships>
                 <relationship kind="action" name="stopNavigation:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="displayLatitude" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="displayLongitude" candidateClass="UILabel"/>
             </relationships>
-        </class>
-        <class className="bpViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/bpViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
