@@ -19,9 +19,13 @@
     NSLog(@" *** About to call searchForBoat");
     
     
-    NSString *urlAsString = @"http://pixolity.com/post.php";
-    urlAsString = [urlAsString stringByAppendingString:@"?param1=First"];
-    urlAsString = [urlAsString stringByAppendingString:@"&param2=Second"];
+    NSString *urlAsString = @"http://192.168.1.9/marine/indexMarine.php";
+    urlAsString = [urlAsString stringByAppendingString:@"?REGO="];
+    urlAsString = [urlAsString stringByAppendingString:txtRegoNumber.text];
+    
+    //urlAsString = [urlAsString stringByAppendingString:@"&param2=Second"];
+    
+    NSLog(@" URL being passed is - %@", urlAsString);
     
     NSURL *URL = [NSURL URLWithString: urlAsString];
     
