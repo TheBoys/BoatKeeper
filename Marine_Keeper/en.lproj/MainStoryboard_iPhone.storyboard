@@ -202,6 +202,7 @@
                         <segue destination="W2B-gx-equ" kind="relationship" relationship="viewControllers" id="KIJ-bA-qvC"/>
                         <segue destination="6a5-P8-LRR" kind="relationship" relationship="viewControllers" id="Fw4-wJ-jJo"/>
                         <segue destination="fpr-Oe-1xr" kind="relationship" relationship="viewControllers" id="6gH-xW-BD5"/>
+                        <segue destination="dei-pn-WP1" kind="relationship" relationship="viewControllers" id="hT4-Vy-Nf2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYG-OT-38B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -246,11 +247,11 @@
             </objects>
             <point key="canvasLocation" x="17" y="503"/>
         </scene>
-        <!--Navigation Controller - Admin-->
+        <!--Navigation Controller-->
         <scene sceneID="dMA-1q-KqA">
             <objects>
                 <navigationController id="fpr-Oe-1xr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Admin" image="1Star.png" id="70C-Ym-zWN"/>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="70C-Ym-zWN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TC6-ko-EYt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -263,11 +264,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYE-Sb-AHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17" y="1162"/>
+            <point key="canvasLocation" x="17" y="1174"/>
+        </scene>
+        <!--Navigation Controller - Admin-->
+        <scene sceneID="9w0-wL-JJT">
+            <objects>
+                <navigationController id="dei-pn-WP1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Admin" image="Gestures.png" id="R8f-fr-8A3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="35x-CA-GA2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ueq-2w-qlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-509" y="1174"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1Star.png" width="38" height="38"/>
         <image name="Gestures.png" width="30" height="30"/>
         <image name="Players.png" width="30" height="30"/>
     </resources>
@@ -281,7 +297,6 @@
         <class className="bpTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/bpTripViewController.h"/>
             <relationships>
-                <relationship kind="action" name="stopNavigation:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="displayLatitude" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="displayLongitude" candidateClass="UILabel"/>
             </relationships>
