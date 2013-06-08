@@ -10,6 +10,7 @@
 		1520B544175B46070012F94D /* bpTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520B543175B46070012F94D /* bpTripViewController.m */; };
 		1520B546175B4BC40012F94D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1520B545175B4BC40012F94D /* CoreLocation.framework */; };
 		1520B548175B4BD10012F94D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1520B547175B4BD10012F94D /* MapKit.framework */; };
+		159178151761F143000F7258 /* bpTripModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 159178141761F143000F7258 /* bpTripModel.m */; };
 		15A24B66175CABE600F5D968 /* bpNewTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A24B65175CABE600F5D968 /* bpNewTripViewController.m */; };
 		255FB4651750BBBF00CD8C63 /* 1Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FB44D1750BBBF00CD8C63 /* 1Star.png */; };
 		255FB4661750BBBF00CD8C63 /* 1Star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 255FB44E1750BBBF00CD8C63 /* 1Star@2x.png */; };
@@ -57,6 +58,8 @@
 		1520B543175B46070012F94D /* bpTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bpTripViewController.m; sourceTree = "<group>"; };
 		1520B545175B4BC40012F94D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1520B547175B4BD10012F94D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		159178131761F143000F7258 /* bpTripModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpTripModel.h; sourceTree = "<group>"; };
+		159178141761F143000F7258 /* bpTripModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bpTripModel.m; sourceTree = "<group>"; };
 		15A24B64175CABE600F5D968 /* bpNewTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpNewTripViewController.h; sourceTree = "<group>"; };
 		15A24B65175CABE600F5D968 /* bpNewTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bpNewTripViewController.m; sourceTree = "<group>"; };
 		255FB44D1750BBBF00CD8C63 /* 1Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1Star.png; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				15A24B64175CABE600F5D968 /* bpNewTripViewController.h */,
 				15A24B65175CABE600F5D968 /* bpNewTripViewController.m */,
 				1520B542175B46070012F94D /* bpTripViewController.h */,
+				159178131761F143000F7258 /* bpTripModel.h */,
+				159178141761F143000F7258 /* bpTripModel.m */,
 				1520B543175B46070012F94D /* bpTripViewController.m */,
 				255FB4861750BC4C00CD8C63 /* bpAdminViewController.h */,
 				255FB4871750BC4C00CD8C63 /* bpAdminViewController.m */,
@@ -324,6 +329,7 @@
 				255FB48E1750BC4C00CD8C63 /* bpTripsViewController.m in Sources */,
 				1520B544175B46070012F94D /* bpTripViewController.m in Sources */,
 				15A24B66175CABE600F5D968 /* bpNewTripViewController.m in Sources */,
+				159178151761F143000F7258 /* bpTripModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

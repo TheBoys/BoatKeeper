@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PxV-tG-7TT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="453" y="1162"/>
+            <point key="canvasLocation" x="499" y="1174"/>
         </scene>
         <!--View Controller - Search 2-->
         <scene sceneID="HUx-Rj-siQ">
@@ -158,22 +158,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIC-4H-PXG">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TMi-mx-hb3" firstAttribute="baseline" secondItem="LBX-dv-VZb" secondAttribute="baseline" type="default" id="1t9-oZ-fsu"/>
-                            <constraint firstItem="TMi-mx-hb3" firstAttribute="leading" secondItem="3zY-bi-Wkh" secondAttribute="leading" type="default" id="2BU-wI-yjn"/>
                             <constraint firstItem="LBX-dv-VZb" firstAttribute="top" secondItem="Ivi-0l-BuW" secondAttribute="top" constant="106" id="9nD-UI-N8M"/>
                             <constraint firstItem="Mmq-J7-Ihp" firstAttribute="baseline" secondItem="lmM-J4-Apm" secondAttribute="baseline" type="default" id="BR8-CB-V9I"/>
                             <constraint firstAttribute="trailing" secondItem="3zY-bi-Wkh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="D2G-h5-2pU"/>
                             <constraint firstItem="3zY-bi-Wkh" firstAttribute="baseline" secondItem="8mT-zP-uN8" secondAttribute="baseline" type="default" id="LrR-eY-Loe"/>
                             <constraint firstItem="lmM-J4-Apm" firstAttribute="top" secondItem="Ivi-0l-BuW" secondAttribute="top" constant="55" id="Ngi-uL-FQG"/>
+                            <constraint firstItem="iIC-4H-PXG" firstAttribute="top" secondItem="Ivi-0l-BuW" secondAttribute="top" constant="155" id="QwO-8e-SrM"/>
                             <constraint firstItem="8mT-zP-uN8" firstAttribute="leading" secondItem="Ivi-0l-BuW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UBm-vX-YOL"/>
+                            <constraint firstItem="iIC-4H-PXG" firstAttribute="leading" secondItem="3zY-bi-Wkh" secondAttribute="leading" type="default" id="V57-T9-hcP"/>
                             <constraint firstItem="lmM-J4-Apm" firstAttribute="trailing" secondItem="LBX-dv-VZb" secondAttribute="trailing" type="default" id="W7i-gw-ZnS"/>
                             <constraint firstItem="Mmq-J7-Ihp" firstAttribute="leading" secondItem="TMi-mx-hb3" secondAttribute="leading" type="default" id="Wha-v5-boh"/>
                             <constraint firstItem="Mmq-J7-Ihp" firstAttribute="trailing" secondItem="TMi-mx-hb3" secondAttribute="trailing" type="default" id="XiM-Ak-LrK"/>
                             <constraint firstAttribute="bottom" secondItem="8mT-zP-uN8" secondAttribute="bottom" constant="25" id="gDz-cm-fq2"/>
                             <constraint firstItem="LBX-dv-VZb" firstAttribute="trailing" secondItem="8mT-zP-uN8" secondAttribute="trailing" type="default" id="htc-42-cFE"/>
+                            <constraint firstItem="iIC-4H-PXG" firstAttribute="leading" secondItem="TMi-mx-hb3" secondAttribute="leading" type="default" id="yVz-0i-j5a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Trip" id="3EX-Te-UcL">
@@ -182,6 +189,7 @@
                     <connections>
                         <outlet property="displayLatitude" destination="Mmq-J7-Ihp" id="9yf-np-S9i"/>
                         <outlet property="displayLongitude" destination="TMi-mx-hb3" id="1vg-du-JpN"/>
+                        <outlet property="displaySpeed" destination="iIC-4H-PXG" id="afi-NC-kil"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j18-T4-4xR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,10 +285,28 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iTE-y0-d3o" kind="relationship" relationship="rootViewController" id="ymB-7F-XSu"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueq-2w-qlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-509" y="1174"/>
+        </scene>
+        <!--View Controller - Admin-->
+        <scene sceneID="BM0-97-TX4">
+            <objects>
+                <viewController id="iTE-y0-d3o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4th-Qk-Ai5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Admin" id="zIj-cc-Sfc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEx-Af-DWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="1830"/>
         </scene>
     </scenes>
     <resources>
@@ -297,8 +323,10 @@
         <class className="bpTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/bpTripViewController.h"/>
             <relationships>
+                <relationship kind="action" name="stopNavigation:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="displayLatitude" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="displayLongitude" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="displaySpeed" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

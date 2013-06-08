@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
+#import "bpTripModel.h"
 
-@interface bpTripViewController : UIViewController <CLLocationManagerDelegate>
+@interface bpTripViewController : UIViewController 
 
 @property (weak, nonatomic) IBOutlet UILabel *displayLatitude;
 @property (weak, nonatomic) IBOutlet UILabel *displayLongitude;
+@property (weak, nonatomic) IBOutlet UILabel *displaySpeed;
 
 @end
